@@ -166,7 +166,6 @@ console.log(book1, book2, book3);
 // Unions
 type id = string | number;
 
-// Narrowing
 function callID(id: id): void {
   if (typeof id === "string") {
     console.log(id.toLocaleUpperCase());

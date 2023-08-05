@@ -89,5 +89,14 @@ var book3 = {
     publication: "penguin publishers"
 };
 console.log(book1, book2, book3);
-// If you want to declare primitives values use type
-// if you want to declare objects use interfaces
+// Narrowing
+function callID(id) {
+    if (typeof id === "string") {
+        console.log(id.toLocaleUpperCase());
+    }
+    else {
+        console.log(id);
+    }
+}
+callID(2);
+callID("Punit");
